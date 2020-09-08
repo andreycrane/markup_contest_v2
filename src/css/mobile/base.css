@@ -1,0 +1,11 @@
+/*
+ * Put font-faces here
+ */
+
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}

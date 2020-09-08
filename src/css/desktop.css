@@ -1,0 +1,3 @@
+@media (min-width: 992px) {
+  @import './desktop/header.css';
+}
