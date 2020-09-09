@@ -66,6 +66,10 @@ sudo apt-get install webp
     background-image: url(../../img/image.webp);
   }
   ```
+  7. Using vim emmet in insert mode
+  ```
+  <C-Y>,
+  ```
 
 
 ### Usefull links
@@ -81,3 +85,5 @@ sudo apt-get install webp
 [PostHTML expressions](https://github.com/posthtml/posthtml-expressions)
 
 [Modernizr](https://modernizr.com/)
+
+[Emmet Vim](https://github.com/mattn/emmet-vim)
