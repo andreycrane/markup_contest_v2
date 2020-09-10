@@ -1,9 +1,14 @@
 <section class="partners-section">
-  <span class="partners-section__header"></span>
-  <span class="partners-section__subheader"></span>
+  <span class="partners-section__header">Partners</span>
+  <span class="partners-section__subheader">
+    We focus on ergonomics and meeting you where you work. It's only a keystroke
+    away.
+  </span>
   <div class="partners-section__grid-container">
-    <picture class="grid-container__item">
-      <img class="grid-container__item-img" src="" alt="">
-    </picture>
+    <each loop="partnersItem in partners">
+      <picture class="partners-grid-container__item">
+        <img class="partners-grid-container__item-img" src="{{ partnersItem }}" alt="" />
+      </picture>
+    </each>
   </div>
 </section>
