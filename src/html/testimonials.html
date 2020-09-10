@@ -1,16 +1,21 @@
 <section class="testimonials-section">
-  <span class="testimonials-section__header"></span>
+  <span class="testimonials-section__header">Testimonials</span>
   <div class="testimonials-section__items-container">
-    <div class="items-container__item">
-      <div class="items-container__item-bio">
-        <div class="item-bio__pict"></div>
-        <div class="item-bio__legend">
-          <div class="item-bio__legend-name"></div>
-          <div class="item-bio__legend-prof"></div>
+    <each loop="testimionItem in testimonials">
+      <div class="items-container__item">
+        <div class="items-container__item-bio">
+          <picture class="item-bio__pict">
+            <img src="{{ testimionItem.img }}" />
+          </picture>
+          <div class="item-bio__legend">
+            <div class="item-bio__legend-name">{{ testimionItem.name }}</div>
+            <div class="item-bio__legend-prof">{{ testimionItem.prof }}</div>
+          </div>
+        </div>
+        <div class="items-container__item-descr">
+          {{ testimionItem.prof }}
         </div>
       </div>
-      <div class="items-container__item-descr">
-      </div>
-    </div>
+    </each>
   </div>
 </section>

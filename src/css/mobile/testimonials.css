@@ -1,0 +1,29 @@
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  background: #181818;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  padding: 60px 20px;
+  align-items: center;
+}
+
+.testimonials-section__header {
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+
+.testimonials-section__items-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.items-container__item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  border: 1px solid #565656;
+  border-radius: 10px;
+}
