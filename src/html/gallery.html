@@ -1,0 +1,14 @@
+<section class="gallery-section">
+  <span class="gallery-section__header">Gallery</span>
+  <span class="gallery-section__subheader">
+    We focus on ergonomics and meeting you where you work. It's only a keystroke
+    away.
+  </span>
+  <div class="gallery-section__grid-container">
+    <each loop="galleryItem in gallery">
+      <picture class="grid-container__item">
+        <img class="grid-container__item-img" src="{{ galleryItem }}" alt="" />
+      </picture>
+    </each>
+  </div>
+</section>
