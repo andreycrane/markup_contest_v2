@@ -1,30 +1,49 @@
 <header class="header-section">
-  <div class="logo-container">
-    <div class="logo">
-      <img src="../img/logo_dark.svg" />
-    </div>
-    <div class="logo-container__mobile-menu">
-      <div class="mobile-menu__mobile-btn">
-        <span class="mobile-btn__stick"></span>
-        <span class="mobile-btn__stick"></span>
-        <span class="mobile-btn__stick"></span>
+  <div class="header-section__top-container">
+    <img class="header-section__logo" src="../img/logo_dark.svg" />
+    <div class="header-section__mob-menu">
+      <div class="header-section__mob-menu-btn">
+        <div class="header-section__mob-menu-stick"></div>
+        <div class="header-section__mob-menu-stick"></div>
+        <div class="header-section__mob-menu-stick"></div>
       </div>
+      <ul class="mobile-menu-body">
+        <li class="mobile-menu-body__item">Home</li>
+        <li class="mobile-menu-body__item">Product</li>
+        <li class="mobile-menu-body__item">About</li>
+        <li class="mobile-menu-body__item">Contact</li>
+        <li class="mobile-menu-body__item">Learn More</li>
+      </ul>
     </div>
   </div>
-  <div class="text-container">
-    <div class="text-container__first-line">Work</div>
-    <div class="text-container__second-line">Fast</div>
-    <div class="text-container__description">
-      Most calendars are designed for teams. Slate is designed for freelancers
-      who want a simple way to plan their schedule.
-    </div>
-  </div>
-  <div class="buttons-container">
-    <button class="buttons-container__btn buttons-container__main-btn">
-      Try For Free
-    </button>
-    <button class="buttons-container__btn buttons-container__secondary-btn">
-      Learn More
-    </button>
-  </div>
+  <h1 class="header-section__title">
+    Work
+    <span class="header-section__title-green">Fast</span>
+  </h1>
+  <p class="header-section__description">
+    Most calendars are designed for teams. Slate is designed for freelancers who
+    want a simple way to plan their schedule.
+  </p>
+  <button class="header-section__btn header-section__btn--main">
+    Try For Free
+  </button>
+  <button class="header-section__btn header-section__btn--secondary">
+    Learn More
+  </button>
+  <picture class="header-section__pict">
+    <source
+      srcset="../img/hero-background.webp 1x, ../img/hero-background-2x.webp 2x"
+      type="image/webp"
+    />
+    <source
+      srcset="../img/hero-background.png 1x, ../img/hero-background-2x.png 2x"
+      type="image/png"
+    />
+    <img
+      class="header-section__img"
+      src="../img/hero-background.png"
+      loading="lazy"
+      importance="low"
+    />
+  </picture>
 </header>

@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import 'normalize.css';
 
 :root {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+  --color-white: #ffffff;
+  --color-dark: #181818;
+  --color-green: #02e4c0;
+  --color-primary: #4452fe;
 }
 
 * {
