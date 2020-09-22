@@ -32,6 +32,8 @@
 .header-section__mob-menu-stick {
   background-color: var(--color-white);
   height: 3px;
+  transform-origin: center;
+  transition: transform .5s ease;
 }
 
 .header-section__mob-menu-stick:not(:last-child) {
@@ -45,7 +47,7 @@
 .header-section__mob-menu-body {
   height: 0;
   overflow: hidden;
-  transition: height .5s ease, opacity .5s ease;
+  transition: height .5s ease, opacity 1s ease;
 }
 
 .header-section__title,
@@ -159,4 +161,16 @@
   letter-spacing: 0.2px;
   color: var(--color-white);
   text-decoration: none;
+}
+
+.header-section__top-container--menu-open .header-section__mob-menu-stick:nth-child(1) {
+  width: 20px;
+  transform: rotate(45deg) translateY(2px);
+  margin: 0;
+}
+.header-section__top-container--menu-open .header-section__mob-menu-stick:nth-child(2) { display: none; }
+.header-section__top-container--menu-open .header-section__mob-menu-stick:nth-child(3) {
+  width: 20px;
+  transform: rotate(-45deg) translateY(-2px);
+  margin: 0;
 }
